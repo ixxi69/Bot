@@ -18,7 +18,7 @@
     "bot-md",
     "multi-device"
   ],
-  "author": "Dika Ardnt.",
+  "author": "ixxi.",
   "license": "MIT",
   "dependencies": {
     "@adiwajshing/baileys" : "^4.3.0",
@@ -63,10 +63,10 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ixxi69/Bot"
+    "url": "git+https://github.com/DikaArdnt/Hisoka-Morou.git"
   },
   "bugs": {
-    "url": "https://github.com/ixxi69/Bot"
+    "url": "https://github.com/DikaArdnt/Hisoka-Morou/issues"
   },
   "homepage": "https://github.com/DikaArdnt/Hisoka-Morou#readme"
 }
