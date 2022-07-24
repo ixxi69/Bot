@@ -24,3 +24,8 @@
 •$ node .
 
 •npm start
+
+
+#config.js
+
+Cambia los numeros por tus numeros 
