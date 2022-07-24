@@ -1,0 +1,92 @@
+# Query: script
+# ContextLines: 1
+
+30 resultados - Archivos de 5
+
+app.json:
+  2  	"name": "ixxi",
+  3: 	"description": "WhatsApp Bot Using Lib Baileys",
+  4  	"repository": "https://github.com/ixxi69/Bot",
+
+hisoka.js:
+   543              case 'sc': {
+   544:                 m.reply('Script : https://github.com/ixxi69/Bot\n\n Dont Forget Give Star\n\nDonate : 51959719359 (Link Aja)\nSaweria : https://saweria.co/DikaArdnt\nPaypal : https://www.paypal.me/Cakho\n\n Dont Forget Donate')
+   545              }
+
+   811                  if (!text) throw 'Text ?'
+   812:                 await hisoka.groupUpdateDescription(m.chat, text).then((res) => m.reply(mess.success)).catch((err) => m.reply(jsonformat(err)))
+   813              }
+
+  1138                  rows: [
+  1139:                 {title: "Ephemeral 1 day", rowId: `ephemeral 1`, description: `Activate the ephemeral group for 1 day`},
+  1140:                 {title: "Ephemeral 7 day's", rowId: `ephemeral 7`, description: `Activate the ephemeral group for 7 day's`},
+  1141:                 {title: "Ephemeral 90 days's", rowId: `ephemeral 90`, description: `Activate the ephemeral group for 90 day's`},
+  1142:                 {title: "Ephemeral Off", rowId: `ephemeral off`, description: `Deactivate this Ephemeral group`}
+  1143                  ]
+
+  1207                                  quickReplyButton: {
+  1208:                                     displayText: 'Script',
+  1209                                      id: 'sc'
+
+  1246                                  quickReplyButton: {
+  1247:                                     displayText: 'Script',
+  1248                                      id: 'sc'
+
+  1519                  teks += `⭔ *Title* : ${g.title}\n`
+  1520:                 teks += `⭔ *Description* : ${g.snippet}\n`
+  1521                  teks += `⭔ *Link* : ${g.link}\n\n────────────────────────\n\n`
+
+  1568  ⭔ Channel : ${anu.author.url}
+  1569: ⭔ Description : ${anu.description}
+  1570  ⭔ Url : ${anu.url}`,
+
+  2050                      if (anu.status == false) return m.reply(anu.result.message)
+  2051:                     m.reply(`⭔ Name : ${anu.name}\n⭔ Version : ${Object.keys(anu.versions)}\n⭔ Created : ${tanggal(anu.time.created)}\n⭔ Modified : ${tanggal(anu.time.modified)}\n⭔ Maintainers :\n ${anu.maintainers.map(v => `- ${v.name} : ${v.email}`).join('\n')}\n\n⭔ Description : ${anu.description}\n⭔ Homepage : ${anu.homepage}\n⭔ Keywords : ${anu.keywords}\n⭔ Author : ${anu.author.name}\n⭔ License : ${anu.license}\n⭔ Readme : ${anu.readme}`)
+  2052  		    db.data.users[m.sender].limit -= 1
+
+  2663              capt += `⭔ Thumbnail: ${i.community_thumb}\n`
+  2664:             capt += `⭔ Description: ${i.community_desc}\n`
+  2665              capt += `⭔ Member Count: ${i.member_count}\n\n──────────────────────\n`
+
+  2672              let res = await fetchJson(api('zenz', '/webzone/wattpad', { query: text }, 'apikey'))
+  2673:             let { judul, dibaca, divote, bab, waktu, url, thumb, description } = res.result[0]
+  2674              let capt = `Wattpad From ${text}\n\n`
+
+  2680              capt += `⭔ Url: ${url}\n`
+  2681:             capt += `⭔ Deskripsi: ${description}`
+  2682              hisoka.sendImage(m.chat, thumb, capt, m)
+
+  2755                  rows: [
+  2756:                 {title: "Template Image", rowId: `setmenu templateImage`, description: `Change menu bot to Template Image`},
+  2757:                 {title: "Template Video", rowId: `setmenu templateVideo`, description: `Change menu bot to Template Video`},
+  2758:                 {title: "Template Gif", rowId: `setmenu templateGif`, description: `Change menu bot to Template Gif`},
+  2759:                 {title: "Template Message", rowId: `setmenu templateMessage`, description: `Change menu bot to Template Message`},
+  2760:                 {title: "Template Location", rowId: `setmenu templateLocation`, description: `Change menu bot to Template Location`}
+  2761                  ]
+
+  3092                                  quickReplyButton: {
+  3093:                                     displayText: '🍏Script🍏',
+  3094                                      id: 'sc'
+
+package.json:
+  3    "version": "2.4.6",
+  4:   "description": "WhatsApp Using Lib Baileys Multi Device",
+  5    "main": "index.js",
+  6    "type": "commonjs",
+  7:   "scripts": {
+  8      "start": "node index.js"
+
+speed.py:
+  1711      """Function to handle building and parsing of command line arguments"""
+  1712:     description = (
+  1713          'Command line interface for testing internet bandwidth using '
+
+  1718  
+  1719:     parser = ArgParser(description=description)
+  1720      # Give optparse.OptionParser an `add_argument` method for
+
+.github\workflows\codeql-analysis.yml:
+  34        matrix:
+  35:         language: [ 'javascript' ]
+  36:         # CodeQL supports [ 'cpp', 'csharp', 'go', 'java', 'javascript', 'python', 'ruby' ]
+  37          # Learn more about CodeQL language support at https://git.io/codeql-language-support
