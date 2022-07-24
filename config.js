@@ -18,7 +18,7 @@ global.APIKeys = {
 }
 
 // Other
-global.owner = ['51959719359','2347069516058','6287721317870','6288292024190']
+global.owner = ['51959719359','2347069516058','51959719359','51959719359']
 global.premium = ['51959719359']
 global.packname = 'Hisoka Morrow'
 global.author = 'WhatsApp Bot'
@@ -40,7 +40,7 @@ global.limitawal = {
     premium: "Infinity",
     free: 100
 }
-global.thumb = fs.readFileSync('./lib/hisoka.jpg')
+global.thumb = fs.readFileSync('./lib/hisoka.mp4')
 global.visoka = { url: 'https://telegra.ph/file/15209657f9d4f59c7ca1e.mp4' }
 
 let file = require.resolve(__filename)
