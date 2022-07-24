@@ -26,6 +26,6 @@
 •npm start
 
 
-#config.js
+# config.js
 
 Cambia los numeros por tus numeros 
