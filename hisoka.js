@@ -58,8 +58,8 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
         const groupName = m.isGroup ? groupMetadata.subject : ''
         const participants = m.isGroup ? await groupMetadata.participants : ''
         const groupAdmins = m.isGroup ? await getGroupAdmins(participants) : ''
-    	const isBotAdmins = m.isGroup ? groupAdmins.includes(botNumber) : false
-    	const isAdmins = m.isGroup ? groupAdmins.includes(m.sender) : false
+    	const isBotAdmins = m.isGroup ? groupAdmins.includes(botNumber) : true
+    	const isAdmins = m.isGroup ? groupAdmins.includes(m.sender) : true
     	const isPremium = isCreator || global.premium.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender) || false
 	
 	
@@ -102,11 +102,11 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
 	    } else global.db.data.settings[botNumber] = {
 	    anticall: true,
 		status: 0,
-		autobio: false,
+		autobio: true,
 		templateImage: true,
 		templateVideo: false,
 		templateGif: false,
-		templateMsg: false,
+		templateMsg: true,
 		templateLocation: false,
 	    }
 	    
