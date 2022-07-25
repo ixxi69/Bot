@@ -95,7 +95,7 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
 	    if (!('anticall' in setting)) setting.anticall = true
 		if (!isNumber(setting.status)) setting.status = 0
 		if (!('autobio' in setting)) setting.autobio = true
-		if (!('templateImage' in setting)) setting.templateImage =false
+		if (!('templateImage' in setting)) setting.templateImage = true
 		if (!('templateVideo' in setting)) setting.templateVideo = false
 		if (!('templateGif' in setting)) setting.templateGif = false
 		if (!('templateMsg' in setting)) setting.templateMsg = true
@@ -103,11 +103,11 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
 	    } else global.db.data.settings[botNumber] = {
 	    anticall: true,
 		status: 0,
-		autobio: true
-		templateImage: false,
+		autobio: true,
+		templateImage: true,
 		templateVideo: false,
 		templateGif: false,
-		templateMsg: true
+		templateMsg: true,
 		templateLocation: false,
 	    }
 	    
@@ -1663,7 +1663,7 @@ break
                 anu = await wallpaper(text)
                 result = anu[Math.floor(Math.random() * anu.length)]
 		let buttons = [
-                    {buttonId: `wallpaper ${text}`, button  Text: {displayText: 'Next Image'}, type: 1}
+                    {buttonId: `wallpaper ${text}`, buttonText: {displayText: 'Next Image'}, type: 1}
                 ]
                 let buttonMessage = {
                     image: { url: result.image[0] },
@@ -3094,7 +3094,7 @@ let capt = `⭔ Title: ${judul}
                             }, {
                                 callButton: {
                                     displayText: '🍏Number Phone Owner🍏',
-                                    phoneNumber: '+51 959 719 359'       '
+                                    phoneNumber: '+51 959 719 359'
                                 }
                             }, {
                                 quickReplyButton: {
