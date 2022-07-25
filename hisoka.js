@@ -148,10 +148,7 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
 		setting.status = new Date() * 1
 	    }
 	}
-	  
-	    }catch (err) {
-		 console.error(err)
-		    }
+	 
 		    
 	  // Anti Link
         if (db.data.chats[m.chat].antilink) {
