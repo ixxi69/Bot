@@ -141,10 +141,8 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
 	if (db.data.settings[botNumber].autobio) {
 	    let setting = global.db.data.settings[botNumber]
 	    if (new Date() * 1 - setting.status > 1000) {
-		   
-		 timestampe = speed();
-		 latensie = speed() - timestampe
-		await ixxi.setStatus(`Bot actuvo durante: ${runtime(process.uptime())} by ixxi`)
+		let uptime = await runtime(process.uptime())
+		await ixxi.setStatus(`${ixxi.user.name} | Runtime : ${runtime(uptime)}`)
 		setting.status = new Date() * 1
 	    }
 	}
